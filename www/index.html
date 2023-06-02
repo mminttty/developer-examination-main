@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -14,6 +15,41 @@
             <div class="container-fluid">
                 <br>
             </div>
+            
+            <h3>Insert Item</h3>
+            <form id="add-form">
+                <input type="text"  id="add-item-name" placeholder="Name">
+                <input type="number" id="add-item-price" placeholder="Price">
+                <input type="number" id="add-item-qty" placeholder="Quantity">
+                <input type="text" id="add-item-desc" placeholder="Description">
+                <button type="submit" class="btn btn-primary">ADD ITEM</button>
+            </form>
+            
+
+            <h3>Update Item</h3>
+            <form id="update-form">
+                <input type="text" id="update-item-id" placeholder="ID">
+                <input type="text" id="update-item-name" placeholder="Name">
+                <input type="number" id="update-item-price" placeholder="Price">
+                <input type="number" id="update-item-qty" placeholder="Quantity">
+                <input type="text" id="update-item-desc" placeholder="Description">
+                <button type="submit" class="btn btn-success">UPDATE ITEM</button>
+            </form>
+
+            <h2>Show Item</h2>
+            <table class="rounded-0 border-0 shadow" id="table-item">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Description</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
     </div>
 </body>
